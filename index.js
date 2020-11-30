@@ -14,8 +14,8 @@ app.use(function(req, res, next) {
 
 
 function _parseRequest(req,res,next){
-  // console.log(req.body);
-  console.log(req.body.body.parties);
+  console.log(req.body);
+  // console.log(req.body.body.parties); an array. Each element if an object with a missedCall Property
   res.send(req.body);
 }
 function _returnHeaders(req,res,next){
