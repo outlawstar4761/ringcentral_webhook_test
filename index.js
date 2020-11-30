@@ -14,7 +14,8 @@ app.use(function(req, res, next) {
 
 
 function _parseRequest(req,res,next){
-  console.log(req.body);
+  // console.log(req.body);
+  console.log(req.body.body.parties);
   res.send(req.body);
 }
 function _returnHeaders(req,res,next){
