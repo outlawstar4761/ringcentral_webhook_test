@@ -4,4 +4,4 @@ ENV TZ=America/Chicago
 COPY . .
 RUN npm install
 EXPOSE 2290
-CMD ["/bin/sh","-c","npm start"]
+CMD ["/bin/sh","-c","npm start > output"]
