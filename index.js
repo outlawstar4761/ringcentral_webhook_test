@@ -13,7 +13,7 @@ const emailData = {
   msg_name:'ringcentral_api_event',
   body:'Generated with node'
 };
-const _buildEmailBody(data){
+function _buildEmailBody(data){
   return `
   <h4>A Telephony Disconnect Event has occured</h4>
   <b>To</b>
